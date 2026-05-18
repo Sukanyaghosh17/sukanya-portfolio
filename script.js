@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Fetch GitHub Projects
     async function fetchGitHubProjects() {
         try {
-            const response = await fetch('https://api.github.com/users/octocat/repos?sort=updated&per_page=6');
+            const response = await fetch('https://api.github.com/users/Sukanyaghosh17/repos?sort=updated&per_page=6');
             const projects = await response.json();
             
             const projectsGrid = document.getElementById('projects-grid');
