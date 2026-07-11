@@ -184,6 +184,29 @@
         .space-y-6 > * + * {
             margin-top: 2rem;
         }
+
+        /* ── Certifications Text High Contrast ── */
+        .cert-card-title {
+            color: #f1f5f9 !important;
+            transition: color 0.3s ease;
+        }
+        .group:hover .cert-card-title {
+            color: #a78bfa !important;
+        }
+        .cert-link-preview {
+            color: #818cf8 !important;
+            transition: color 0.3s ease;
+        }
+        .cert-link-preview:hover {
+            color: #a5b4fc !important;
+        }
+        .cert-link-download {
+            color: #9ca3af !important;
+            transition: color 0.3s ease;
+        }
+        .cert-link-download:hover {
+            color: #f3f4f6 !important;
+        }
     </style>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -206,7 +229,6 @@
                 <!-- Logo -->
                 <div
                     class="logo text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-indigo-600">
-                    Sukanya Ghosh
                 </div>
 
                 <!-- Desktop Nav -->
@@ -215,6 +237,7 @@
                     <a href="#about" class="nav-link hover:text-indigo-600 transition">About</a>
                     <a href="#projects" class="nav-link hover:text-indigo-600 transition">Projects</a>
                     <a href="#skills" class="nav-link hover:text-indigo-600 transition">Skills</a>
+                    <a href="#certifications" class="nav-link hover:text-indigo-600 transition">Certifications</a>
                     <a href="#contact" class="nav-link hover:text-indigo-600 transition">Contact</a>
                 </nav>
 
@@ -246,6 +269,7 @@
                     <a href="#about" class="nav-link-mobile">About</a>
                     <a href="#projects" class="nav-link-mobile">Projects</a>
                     <a href="#skills" class="nav-link-mobile">Skills</a>
+                    <a href="#certifications" class="nav-link-mobile">Certifications</a>
                     <a href="#contact" class="nav-link-mobile">Contact</a>
                 </nav>
                 <button id="close-mobile-menu"
@@ -266,11 +290,9 @@
                             <span>Hi, I'm</span>
                             <span>Sukanya Ghosh</span>
                         </h1>
-                        <h2>MERN Stack Developer</h2>
+                        <h2>ASPIRING DATA ANALYST</h2>
                         <p>
-                            I craft seamless web experiences where design meets logic.
-                            Focused on building scalable, user-centric applications that
-                            solve real-world problems with clarity and efficiency.
+                            I build data-driven solutions using Python, SQL, and visualization tools to uncover insights, forecast trends, and support better decision-making.
                         </p>
                         <div class="hero-buttons">
                             <a href="#contact" class="glass-button">Contact Me</a>
@@ -306,13 +328,16 @@
                 <div class="flex flex-col md:flex-row" style="gap: 4rem;">
                     <div class="md:w-1/2">
                         <p class="text-gray-500  mb-6 leading-relaxed">
-                            I am a Final-year B.Tech CSE student with strong foundations in Core Java, Data Structures, Algorithms, DBMS, and Operating Systems.
+                            I am a final-year B.Tech Computer Science student with strong foundations in Data Analysis, SQL, Python, DBMS, and Statistics.
                         </p>
                         <p class="text-gray-500  mb-6 leading-relaxed">
-                            I am skilled in building scalable full-stack web applications using the MERN stack (MongoDB, Express.js, React, Node.js).
+                            I am skilled in data cleaning, data visualization, dashboard creation, and deriving business insights from data using tools such as Excel, SQL, Power BI, and Python.
+                        </p>
+                        <p class="text-gray-500  mb-6 leading-relaxed">
+                            Currently pursuing the Google Data Analytics Professional Certificate and passionate about transforming raw data into actionable insights that support business decision-making.
                         </p>
                         <p class="text-gray-500  mb-8 leading-relaxed">
-                            I am passionate about problem-solving, writing efficient code, and developing real-world software solutions.
+                            I am eager to build a career in Data Analytics and Business Intelligence, with strong analytical thinking, attention to detail, and problem-solving abilities.
                         </p>
                         <div class="grid grid-cols-1 gap-6">
                             <div class="flex items-center">
@@ -332,7 +357,7 @@
                                 </div>
                                 <div>
                                     <div class="text-xs font-bold text-green-600 ">Education</div>
-                                    <div class="font-medium text-gray-700">B.Tech Computer Science
+                                    <div class="font-medium text-gray-700">B.Tech in Computer Science Engineering
                                     </div>
                                 </div>
                             </div>
@@ -408,98 +433,177 @@
                 </p>
 
                 <div class="mb-8">
-                <h3 class="text-lg font-semibold text-gray-500 mb-4">Languages</h3>
+                    <h3 class="text-lg font-semibold text-gray-500 mb-4">Data Analytics & BI</h3>
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                        <!-- Python -->
+                        <div class="skill-container">
+                            <i class="fas fa-file-excel text-green-600 text-xl mr-3"></i>
+                            <span class="text-green-600 font-medium">Microsoft Excel</span>
+                        </div>
+                        <div class="skill-container">
+                            <i class="fas fa-database text-indigo-600 text-xl mr-3"></i>
+                            <span class="text-indigo-600 font-medium">SQL</span>
+                        </div>
+                        <div class="skill-container">
+                            <i class="fas fa-chart-bar text-yellow-500 text-xl mr-3"></i>
+                            <span class="text-yellow-500 font-medium">Power BI</span>
+                        </div>
+                        <div class="skill-container">
+                            <i class="fas fa-chart-pie text-blue-500 text-xl mr-3"></i>
+                            <span class="text-blue-500 font-medium">Tableau</span>
+                        </div>
+                        <div class="skill-container">
+                            <i class="fas fa-broom text-gray-400 text-xl mr-3"></i>
+                            <span class="text-gray-400 font-medium">Data Cleaning</span>
+                        </div>
+                        <div class="skill-container">
+                            <i class="fas fa-project-diagram text-purple-500 text-xl mr-3"></i>
+                            <span class="text-purple-500 font-medium">Data Visualization</span>
+                        </div>
+                        <div class="skill-container">
+                            <i class="fas fa-columns text-teal-500 text-xl mr-3"></i>
+                            <span class="text-teal-500 font-medium">Dashboard Development</span>
+                        </div>
+                        <div class="skill-container">
+                            <i class="fas fa-tachometer-alt text-red-500 text-xl mr-3"></i>
+                            <span class="text-red-500 font-medium">KPI Analysis</span>
+                        </div>
+                        <div class="skill-container">
+                            <i class="fas fa-calculator text-orange-500 text-xl mr-3"></i>
+                            <span class="text-orange-500 font-medium">Statistical Analysis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Programming Languages -->
+                <div class="mb-8">
+                    <h3 class="text-lg font-semibold text-gray-500 mb-4">Programming Languages</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                         <div class="skill-container">
                             <i class="fab fa-python text-blue-600 text-xl mr-3"></i>
                             <span class="text-blue-600 font-medium">Python</span>
                         </div>
-
-                        <!-- Java -->
                         <div class="skill-container">
                             <i class="fab fa-java text-red-600 text-xl mr-3"></i>
                             <span class="text-red-600 font-medium">Java</span>
                         </div>
-
-                        <!-- SQL -->
                         <div class="skill-container">
-                            <i class="fas fa-database text-indigo-600 text-xl mr-3"></i>
-                            <span class="text-indigo-600 font-medium">SQL</span>
+                            <i class="fab fa-js-square text-yellow-500 text-xl mr-3"></i>
+                            <span class="text-yellow-500 font-medium">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="mb-8">
+                    <h3 class="text-lg font-semibold text-gray-500 mb-4">Databases</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <div class="skill-container">
+                            <i class="fas fa-database text-blue-500 text-xl mr-3"></i>
+                            <span class="text-blue-500 font-medium">MySQL</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Web Technologies -->
                 <div class="mb-8">
-                <h3 class="text-lg font-semibold text-gray-500 mb-4">Web Technologies</h3>
+                    <h3 class="text-lg font-semibold text-gray-500 mb-4">Web Technologies (Secondary)</h3>
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                        <!-- HTML -->
                         <div class="skill-container">
                             <i class="fab fa-html5 text-orange-600 text-xl mr-3"></i>
                             <span class="text-orange-600 font-medium">HTML</span>
                         </div>
-
-                        <!-- CSS -->
                         <div class="skill-container">
                             <i class="fab fa-css3-alt text-blue-500 text-xl mr-3"></i>
                             <span class="text-blue-500 font-medium">CSS</span>
                         </div>
-
-                        <!-- JavaScript -->
-                        <div class="skill-container">
-                            <i class="fab fa-js-square text-yellow-500 text-xl mr-3"></i>
-                            <span class="text-yellow-500 font-medium">JavaScript</span>
-                        </div>
-
-                        <!-- Tailwind -->
-                        <div class="skill-container">
-                            <i class="fas fa-wind text-cyan-500 text-xl mr-3"></i>
-                            <span class="text-cyan-500 font-medium">Tailwind</span>
-                        </div>
-
-                        <!-- React -->
                         <div class="skill-container">
                             <i class="fab fa-react text-blue-400 text-xl mr-3"></i>
                             <span class="text-blue-400 font-medium">React</span>
+                        </div>
+                        <div class="skill-container">
+                            <i class="fas fa-wind text-cyan-500 text-xl mr-3"></i>
+                            <span class="text-cyan-500 font-medium">Tailwind CSS</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Tools -->
                 <div class="mb-8">
-                <h3 class="text-lg font-semibold text-gray-500 mb-4">Tools</h3>
+                    <h3 class="text-lg font-semibold text-gray-500 mb-4">Tools</h3>
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                        <!-- VS Code -->
-                        <div class="skill-container">
-                            <i class="fas fa-code text-blue-400 text-xl mr-3"></i>
-                            <span class="text-blue-400 font-medium">VS Code</span>
-                        </div>
-
-                        <!-- Git -->
                         <div class="skill-container">
                             <i class="fab fa-git-alt text-orange-600 text-xl mr-3"></i>
                             <span class="text-orange-600 font-medium">Git</span>
                         </div>
-
-                        <!-- GitHub -->
                         <div class="skill-container">
                             <i class="fab fa-github text-gray-200 text-xl mr-3"></i>
                             <span class="text-gray-200 font-medium">GitHub</span>
                         </div>
-
-                        <!-- MS Office -->
+                        <div class="skill-container">
+                            <i class="fas fa-code text-blue-400 text-xl mr-3"></i>
+                            <span class="text-blue-400 font-medium">VS Code</span>
+                        </div>
                         <div class="skill-container">
                             <i class="fab fa-microsoft text-red-600 text-xl mr-3"></i>
                             <span class="text-red-600 font-medium">MS Office</span>
                         </div>
-
-                        <!-- Figma -->
                         <div class="skill-container">
                             <i class="fab fa-figma text-purple-500 text-xl mr-3"></i>
                             <span class="text-purple-500 font-medium">Figma</span>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="mb-32">
+            <div class="glass-container rounded-3xl backdrop-blur-lg" style="padding: 3.5rem 4rem;">
+                <h2 class="section-title">Certifications</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                    <!-- Certificate 1 Card -->
+                    <div class="p-6 rounded-2xl backdrop-blur-md border custom-border flex flex-col justify-between transition-all duration-300 hover:border-indigo-500/50 hover:bg-white/5 group shadow-lg hover:shadow-indigo-500/10">
+                        <div class="mb-5 overflow-hidden rounded-xl border border-white/10 bg-black/30 flex items-center justify-center p-3 h-64 sm:h-72 md:h-80 w-full">
+                            <img src="./Data Visualization Certificate.png" alt="Data Visualization Certificate" class="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-[1.03]" loading="lazy">
+                        </div>
+                        <div>
+                            <h3 class="cert-card-title text-xl font-bold transition-colors duration-300">Data Visualization Certificate</h3>
+                            <div class="flex items-center justify-between mt-4">
+                                <a href="./Data%20Visualization%20Certificate.png" target="_blank" class="cert-link-preview inline-flex items-center font-semibold text-sm transition-colors duration-300">
+                                    View Preview <i class="fas fa-eye ml-2 text-xs"></i>
+                                </a>
+                                <a href="./Data%20Visualization%20Certificate.png" download class="cert-link-download inline-flex items-center font-semibold text-sm transition-colors duration-300">
+                                    Download <i class="fas fa-download ml-2 text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 2 Card -->
+                    <div class="p-6 rounded-2xl backdrop-blur-md border custom-border flex flex-col justify-between transition-all duration-300 hover:border-indigo-500/50 hover:bg-white/5 group shadow-lg hover:shadow-indigo-500/10">
+                        <div class="mb-5 overflow-hidden rounded-xl border border-white/10 bg-black/30 flex items-center justify-center p-3 h-64 sm:h-72 md:h-80 w-full">
+                            <img src="./SQL Certficate.jpg" alt="SQL Certificate" class="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-[1.03]" loading="lazy">
+                        </div>
+                        <div>
+                            <h3 class="cert-card-title text-xl font-bold transition-colors duration-300">SQL Certificate</h3>
+                            <div class="flex items-center justify-between mt-4">
+                                <a href="./SQL%20Certficate.jpg" target="_blank" class="cert-link-preview inline-flex items-center font-semibold text-sm transition-colors duration-300">
+                                    View Preview <i class="fas fa-eye ml-2 text-xs"></i>
+                                </a>
+                                <a href="./SQL%20Certficate.jpg" download class="cert-link-download inline-flex items-center font-semibold text-sm transition-colors duration-300">
+                                    Download <i class="fas fa-download ml-2 text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- View All Certifications -->
+                <div class="flex justify-center" style="margin-top: 3rem;">
+                    <a href="https://www.linkedin.com/in/sukanya-ghosh-85a342323/details/certifications/" target="_blank" class="primary-button inline-flex items-center">
+                        <i class="fab fa-linkedin" style="margin-right: 0.5rem;"></i>
+                        View all the certifications
+                    </a>
                 </div>
             </div>
         </section>
@@ -520,42 +624,42 @@
                     <!-- Project 1 -->
                     <div class="project-card rounded-xl overflow-hidden border border-purple-900/30 hover:border-purple-600/50 hover:shadow-lg hover:shadow-purple-900/20 transition-all duration-300" style="background: rgba(31,41,55,0.5);">
                         <div class="h-48 flex items-center justify-center" style="background: linear-gradient(135deg, rgba(147,51,234,0.15), rgba(79,70,229,0.15));">
-                            <i class="fas fa-project-diagram text-4xl text-purple-500"></i>
+                            <i class="fas fa-chart-pie text-4xl text-purple-500"></i>
                         </div>
                         <div class="p-6">
-                            <h3 class="text-lg font-bold text-gray-200 mb-2">Axon — Knowledge Graph</h3>
-                            <p class="text-gray-400 mb-4 line-clamp-2">Organize and visualize learning resources using a graph-based system with REST APIs, JWT Auth, and React Flow.</p>
+                            <h3 class="text-lg font-bold text-gray-200 mb-2">Netflix Content Analytics</h3>
+                            <p class="text-gray-400 mb-4 line-clamp-2">A dual-layer analytics solution decoding Netflix's content strategy using Python EDA and an interactive Power BI dashboard.</p>
                             <div class="flex flex-wrap gap-2">
-                                <span class="text-xs px-2 py-1 rounded-full bg-purple-900/50 text-purple-300">MERN</span>
-                                <span class="text-xs px-2 py-1 rounded-full bg-indigo-900/50 text-indigo-300">Vite</span>
+                                <span class="text-xs px-2 py-1 rounded-full bg-purple-900/50 text-purple-300">Python</span>
+                                <span class="text-xs px-2 py-1 rounded-full bg-indigo-900/50 text-indigo-300">Power BI</span>
                             </div>
                         </div>
                     </div>
                     <!-- Project 2 -->
                     <div class="project-card rounded-xl overflow-hidden border border-green-900/30 hover:border-green-600/50 hover:shadow-lg hover:shadow-green-900/20 transition-all duration-300" style="background: rgba(31,41,55,0.5);">
                         <div class="h-48 flex items-center justify-center" style="background: linear-gradient(135deg, rgba(16,185,129,0.15), rgba(20,184,166,0.15));">
-                            <i class="fas fa-leaf text-4xl text-green-500"></i>
+                            <i class="fas fa-chart-line text-4xl text-green-500"></i>
                         </div>
                         <div class="p-6">
-                            <h3 class="text-lg font-bold text-gray-200 mb-2">Annadan</h3>
-                            <p class="text-gray-400 mb-4 line-clamp-2">Food Waste Donation Platform connecting donors, NGOs, and volunteers for efficient redistribution of surplus food.</p>
+                            <h3 class="text-lg font-bold text-gray-200 mb-2">Sales Analytics BI Dashboard</h3>
+                            <p class="text-gray-400 mb-4 line-clamp-2">Comprehensive business intelligence dashboard for sales performance tracking, revenue forecasting, and actionable insights.</p>
                             <div class="flex flex-wrap gap-2">
-                                <span class="text-xs px-2 py-1 rounded-full bg-purple-900/50 text-purple-300">React.js</span>
-                                <span class="text-xs px-2 py-1 rounded-full bg-indigo-900/50 text-indigo-300">Firebase</span>
+                                <span class="text-xs px-2 py-1 rounded-full bg-green-900/50 text-green-300">SQL</span>
+                                <span class="text-xs px-2 py-1 rounded-full bg-teal-900/50 text-teal-300">Tableau</span>
                             </div>
                         </div>
                     </div>
                     <!-- Project 3 -->
                     <div class="project-card rounded-xl overflow-hidden border border-blue-900/30 hover:border-blue-600/50 hover:shadow-lg hover:shadow-blue-900/20 transition-all duration-300" style="background: rgba(31,41,55,0.5);">
                         <div class="h-48 flex items-center justify-center" style="background: linear-gradient(135deg, rgba(59,130,246,0.15), rgba(6,182,212,0.15));">
-                            <i class="fas fa-school text-4xl text-blue-400"></i>
+                            <i class="fas fa-wind text-4xl text-blue-400"></i>
                         </div>
                         <div class="p-6">
-                            <h3 class="text-lg font-bold text-gray-200 mb-2">School Management</h3>
-                            <p class="text-gray-400 mb-4 line-clamp-2">Role-based dashboards for Admins, Teachers, and Students with attendance tracking and performance analytics.</p>
+                            <h3 class="text-lg font-bold text-gray-200 mb-2">Atmos Air Quality Platform</h3>
+                            <p class="text-gray-400 mb-4 line-clamp-2">An intelligent platform for monitoring real-time air quality metrics, leveraging external APIs and interactive visual maps.</p>
                             <div class="flex flex-wrap gap-2">
-                                <span class="text-xs px-2 py-1 rounded-full bg-purple-900/50 text-purple-300">MERN</span>
-                                <span class="text-xs px-2 py-1 rounded-full bg-indigo-900/50 text-indigo-300">Redux Toolkit</span>
+                                <span class="text-xs px-2 py-1 rounded-full bg-blue-900/50 text-blue-300">JavaScript</span>
+                                <span class="text-xs px-2 py-1 rounded-full bg-cyan-900/50 text-cyan-300">API Integration</span>
                             </div>
                         </div>
                     </div>
